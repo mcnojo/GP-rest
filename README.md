@@ -14,3 +14,5 @@ npm run db:push
 
 optional for studio view: 'npm run db:studio' then nav to https://local.drizzle.studio
 
+test:
+npm run test

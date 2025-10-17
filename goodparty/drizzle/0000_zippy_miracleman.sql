@@ -6,6 +6,7 @@ CREATE TABLE "candidate" (
 	"party" text NOT NULL,
 	"office" text NOT NULL,
 	"state" text NOT NULL,
+	"district" text,
 	"bio" text NOT NULL,
 	"funds_raised" double precision DEFAULT 0 NOT NULL,
 	"embedding" vector(1536),

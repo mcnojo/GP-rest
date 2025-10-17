@@ -1,5 +1,5 @@
 {
-  "id": "32e6e42e-6df5-4c00-8ba0-4911abb1b6a0",
+  "id": "80b35266-47c9-4946-b6e6-1d2412c564d2",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -37,6 +37,12 @@
           "type": "text",
           "primaryKey": false,
           "notNull": true
+        },
+        "district": {
+          "name": "district",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
         },
         "bio": {
           "name": "bio",

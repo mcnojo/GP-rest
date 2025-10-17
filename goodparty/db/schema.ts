@@ -8,6 +8,7 @@ export const candidates = pgTable(
         party:text("party").notNull(),
         office: text("office").notNull(),
         state: text("state").notNull(),
+        district: text('district'),
         bio: text("bio").notNull(),
         fundsRaised: doublePrecision("funds_raised").notNull().default(0),
         embedding: vector("embedding", { dimensions: 1536 }),
