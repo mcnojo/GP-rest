@@ -6,7 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+
+    "db:img:create": "docker run --name pgvector -e POSTGRES_PASSWORD=postgres -p 5433:5432 -v pgvector-data:/var/lib/postgresql/data -d pgvector/pgvector:pg16"
+
   },
   "dependencies": {
     "react": "19.1.0",

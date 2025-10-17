@@ -4,6 +4,13 @@ cd goodparty
 
 npm i
 
-create .env, add:
-OPENAI_API_KEY=
+copy .env.example into .env and fill with personal openai api key, and directly copy the db url.
+
+(make sure you ahve docker downloaded and running on desktop so we cna run local postgres)
+
+run:
+npm run db:img:create
+npm run db:push
+
+optional for studio view: 'npm run db:studio' then nav to https://local.drizzle.studio
 
