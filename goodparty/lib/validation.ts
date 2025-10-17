@@ -14,7 +14,8 @@ export const candidateFilterSchema = z.object({
     party: z.string().optional(),
     office: z.string().optional(),
     state: z.string().length(2).optional(),
-    q: z.string().optional(),
+    minFunds: z.coerce.number().min(0).optional(),
+    maxFunds: z.coerce.number().min(0).optional(),
 });
 
 export const candidateIdSchema = z.object({ id: z.string().min(1), });
