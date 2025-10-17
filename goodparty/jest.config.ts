@@ -3,6 +3,7 @@ import type { Config } from 'jest';
 
 const createJestConfig = nextJest({ dir: './' });
 
+// had issues with the jest init start, below is gpt-ese
 const config: Config = {
     testEnvironment: 'node',
     moduleNameMapper: {

@@ -11,7 +11,7 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "db:img:create": "docker run --name pgvector -e POSTGRES_PASSWORD=postgres -p 5433:5432 -v pgvector-data:/var/lib/postgresql/data -d pgvector/pgvector:pg16",
-    "test": "jest"
+    "test": "jest --runInBand"
   },
   "dependencies": {
     "react": "19.1.0",
